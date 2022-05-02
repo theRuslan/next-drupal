@@ -9,7 +9,6 @@ import "@docsearch/css"
 import { site } from "config/site"
 import { docs } from "config/docs"
 import { SidebarNav } from "components/sidebar-nav"
-import { DrupalConLogo } from "./drupalcon-logo"
 
 interface LayoutProps {
   title: string
@@ -47,13 +46,13 @@ export function Layout({
           ],
         }}
       />
-      <div className={classNames(path === "/" ? "bg-[#34c5c6]" : "bg-black")}>
-        <div className="container flex flex-col items-center justify-between px-6 py-4 mx-auto sm:py-2 sm:flex-row xl:px-8">
+      <div className="bg-black">
+        <div className="container flex flex-col items-center justify-between px-6 py-2 mx-auto sm:py-2 sm:flex-row xl:px-8">
           <a
             href={`${site.social.contact}?utm_source=next-drupal&utm_medium=banner`}
             rel="noopener noreferrer"
             target="_blank"
-            className="mt-2 md:w-[340px] text-sm font-semibold text-white sm:text-base sm:mt-0 hover:underline"
+            className="mt-2 text-sm font-semibold text-white sm:text-base sm:mt-0 hover:underline"
           >
             <span className="sr-only">Chapter Three</span>
             <svg
@@ -69,26 +68,10 @@ export function Layout({
             </svg>
           </a>
           <a
-            href="https://chapterthree.com/next-drupal"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="flex items-center mx-auto mt-2 space-x-2 font-semibold text-black md:ml-auto sm:mr-0 md:mt-0 lg:mr-auto"
-          >
-            <DrupalConLogo />{" "}
-            <span
-              className={classNames(
-                "underline",
-                path === "/" ? "text-black" : "text-white"
-              )}
-            >
-              Join our DrupalCon BoF
-            </span>
-          </a>
-          <a
             href={`${site.social.contact}?utm_source=next-drupal&utm_medium=banner`}
             rel="noopener noreferrer"
             target="_blank"
-            className="mt-2 text-sm text-right hidden lg:inline text-white md:w-[340px] sm:text-base sm:mt-0 hover:underline"
+            className="inline mt-2 text-sm text-right text-white sm:mt-0 hover:underline"
           >
             Contact Chapter Three for your next project
           </a>
@@ -96,7 +79,7 @@ export function Layout({
       </div>
       <div
         className={classNames(
-          "fixed z-50 block p-6 overflow-auto bg-white bottom-0 transition-transform top-[139px] border-r border-t lg:hidden",
+          "fixed z-50 block p-6 overflow-auto bg-white bottom-0 transition-transform top-[123px] border-r border-t lg:hidden",
           showMenu ? "translate-x-0" : "-translate-x-full"
         )}
       >
