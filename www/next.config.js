@@ -8,6 +8,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: "/docs/quick-start",
+        destination: "/learn",
+        permanent: true,
+      },
+      {
         source: "/learn",
         destination: "/learn/quick-start",
         permanent: false,
@@ -20,6 +25,11 @@ module.exports = {
       {
         source: "/docs/search-api",
         destination: "/docs/guides/search-api",
+        permanent: true,
+      },
+      {
+        source: "/docs/guides/:slug*",
+        destination: "/guides/:slug*",
         permanent: true,
       },
     ]
