@@ -1,8 +1,8 @@
-# example-kitchen-sink
+# example-umami
 
-An example site with every features.
+The Umami demo site built as a headless Drupal with Next.js.
 
-**This example is WIP**.
+See https://demo.next-drupal.org
 
 ## License
 
